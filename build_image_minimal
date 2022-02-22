@@ -1,0 +1,9 @@
+#!/bin/bash
+source poky/oe-init-build-env build/
+export MACHINE="beaglebone"
+bitbake-layers add-layer ../meta-arm/meta-arm-toolchain
+bitbake-layers add-layer ../meta-arm/meta-arm
+bitbake-layers add-layer ../meta-ti
+bitbake-layers add-layer ../meta-qt5
+bitbake-layers add-layer ../meta-bbb-custom/
+bitbake core-image-minimal-qt5 -c populate_sdk
