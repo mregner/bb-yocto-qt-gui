@@ -1,0 +1,2 @@
+#!/bin/bash
+xzcat build/tmp/deploy/images/beaglebone/core-image-minimal-qt5-beaglebone.wic.xz | sudo dd of=/dev/sde bs=1M  iflag=fullblock oflag=direct conv=fsync

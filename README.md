@@ -4,7 +4,7 @@ Package for building custom yocto images with QT on the Beaglebone.
 
 ## To build
 
-Create a base build directory, eg `mkdir ~/yocto`
+Create a base build directory, eg `mkdir ~/yocto && cd ~/yocto`
 
 Clone the build environment Docker package `https://github.com/mregner/yocto-builder.git` and this package
 

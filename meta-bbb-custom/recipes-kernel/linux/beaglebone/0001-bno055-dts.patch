@@ -1,0 +1,16 @@
+diff --git a/am335x-bone-common.dtsi.original b/am335x-bone-common.dtsi
+index 31b0516..e270b3b 100644
+--- a/arch/arm/boot/dts/am335x-bone-common.dtsi
++++ b/arch/arm/boot/dts/am335x-bone-common.dtsi
+@@ -231,6 +231,11 @@ &i2c2 {
+ 	status = "okay";
+ 	clock-frequency = <100000>;
+ 
++	bno055: bno055@28 {
++		compatible = "bosch,bno055";
++		reg = <0x28>;
++	};
++
+ 	cape_eeprom0: cape_eeprom0@54 {
+ 		compatible = "atmel,24c256";
+ 		reg = <0x54>;
